@@ -6,15 +6,13 @@ import (
 )
 
 func main(){
-	now := time.Now()
 
-	fmt.Println("Today : ", now.Format("2020, April 27"))
+	january := time.Date(2020, time.January, 3, 0, 0, 0, 0, time.UTC)
+	february := time.Date(2020, time.February, 10, 0, 0, 0, 0, time.UTC)
 
-	longTimeAgo := time.Date(2020, time.March, 1, 0, 0, 0, 0, time.UTC)
-
-	different := now.Sub(longTimeAgo)
+	different := january.Sub(february)
 
 	days := int(different.Hours() / 24 )
 
-	fmt.Printf("Dari tanggal 1 Maret 2020 sudah %d hari yang terlewati \n", days)
+	fmt.Printf("Dari tanggal 3 January 2020 sampai 10 February 2020 sudah %d hari yang terlewati \n", days)
 }
