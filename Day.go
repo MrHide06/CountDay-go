@@ -16,5 +16,5 @@ func main(){
 
 	days := int(different.Hours() / 24 )
 
-	fmt.Printf("%d\n", days)
+	fmt.Printf("Dari tanggal 1 Maret 2020 sudah %d hari yang terlewati \n", days)
 }
